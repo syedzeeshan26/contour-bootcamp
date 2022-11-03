@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Day 4 (Task 3)</title>
+</head>
+<body>
+   
+            <h1>iterate items by using foreach and arrow function loop </h1>
+            Result : <br>
+            <input type="text" id="txtresult" name="TextBox3">
+            <br>
+            <br>
+            <input type="button" name="clickbtn" value="compare" onclick="print_arry()">
+
+        <script type="text/javascript" >
+
+            let arr = ["f1","f2","f3","f4","f5","f6"]
+            function print_arry(){
+               arr.forEach(myName);
+
+               function myName(item){
+                   document.getElementById("txtresult").value += (" " + item);
+
+            }
+        }
+            // arr.forEach(myname)
+            
+
+
+            // foreach(item arr)
+            // myname(arr[i])
+
+            // function myname(item){
+            //     console.log("My name" + item)
+            // }
+
+            arr.forEach((item)=>{
+                document.getElementById("txtresult").value += (" " + item);
+
+            }
+
+            )
+            
+        </script>
+</body>
+</html>
